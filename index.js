@@ -4,7 +4,7 @@ const {User,Todo} = require('./db')
 const zod = require('zod')
 const jwt = require('jsonwebtoken')
 require('dotenv').config({path:'./.env'})
-const authMiddlware = require('./middleware')
+const authMiddlware = require('./middleware.js')
 const cors = require('cors')
 const JWT_SECRET = process.env.JWT_SECRET
 
